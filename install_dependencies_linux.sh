@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Axionax Dependency Installer for Linux
+# axionax Dependency Installer for Linux
 # Supports: Ubuntu/Debian, CentOS/RHEL, Arch, Alpine
 #
 
@@ -31,7 +31,7 @@ detect_os() {
 }
 
 echo -e "${BLUE}========================================${NC}"
-echo -e "${BLUE}   Axionax Dependency Installer${NC}"
+echo -e "${BLUE}   axionax Dependency Installer${NC}"
 echo -e "${BLUE}========================================${NC}"
 echo ""
 

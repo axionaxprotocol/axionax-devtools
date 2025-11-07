@@ -1,4 +1,4 @@
-# Axionax Testnet Faucet
+# axionax Testnet Faucet
 
 Web application for distributing testnet AXX tokens to developers and testers.
 
@@ -110,7 +110,7 @@ Get faucet configuration.
   "chain_id": 86137,
   "amount": "100 AXX",
   "cooldown_hours": 24,
-  "network": "Axionax Testnet"
+  "network": "axionax Testnet"
 }
 ```
 

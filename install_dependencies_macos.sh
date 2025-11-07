@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Axionax Dependency Installer for macOS
+# axionax Dependency Installer for macOS
 # Supports: macOS 10.15+ (Catalina and later)
 #
 
@@ -14,7 +14,7 @@ BLUE='\033[0;34m'
 NC='\033[0m'
 
 echo -e "${BLUE}========================================${NC}"
-echo -e "${BLUE}   Axionax Dependency Installer${NC}"
+echo -e "${BLUE}   axionax Dependency Installer${NC}"
 echo -e "${BLUE}   macOS Edition${NC}"
 echo -e "${BLUE}========================================${NC}"
 echo ""

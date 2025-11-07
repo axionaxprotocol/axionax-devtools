@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Performance benchmark suite for Axionax v1.6
+Performance benchmark suite for axionax v1.6
 Compares Rust implementation performance across different operations
 """
 
@@ -83,7 +83,7 @@ class Benchmarker:
 def main():
     """Run all benchmarks"""
     print("=" * 70)
-    print("⚡ Axionax v1.6 Performance Benchmarks")
+    print("⚡ axionax v1.6 Performance Benchmarks")
     print("=" * 70)
     
     benchmarker = Benchmarker()

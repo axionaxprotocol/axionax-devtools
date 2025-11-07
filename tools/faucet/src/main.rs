@@ -135,7 +135,7 @@ async fn info(State(state): State<FaucetState>) -> impl IntoResponse {
         "chain_id": state.chain_id,
         "amount": format!("{} AXX", FAUCET_AMOUNT / 1_000_000_000_000_000_000),
         "cooldown_hours": COOLDOWN_HOURS,
-        "network": "Axionax Testnet"
+        "network": "axionax Testnet"
     }))
 }
 

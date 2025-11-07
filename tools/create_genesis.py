@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Genesis Configuration Generator
-Creates genesis.json for Axionax Testnet launch
+Creates genesis.json for axionax Testnet launch
 """
 
 import json
@@ -201,7 +201,7 @@ def main():
     
     # Create generator
     print("=" * 60)
-    print("Axionax Genesis Generator")
+    print("axionax Genesis Generator")
     print("=" * 60)
     
     gen = GenesisGenerator(chain_id=86137)

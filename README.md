@@ -1,9 +1,9 @@
-﻿# AxionAX Protocol - Developer Tools 🔧
+﻿# axionax protocol - Developer Tools 🔧
 
-Scripts and utilities for AxionAX Protocol development and testing.
+Scripts and utilities for axionax protocol development and testing.
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Protocol](https://img.shields.io/badge/Protocol-AxionAX-purple)](https://axionax.org)
+[![Protocol](https://img.shields.io/badge/Protocol-axionax-purple)](https://axionax.org)
 [![Status](https://img.shields.io/badge/Status-Pre--Testnet-orange)](https://github.com/axionaxprotocol/axionax-core)
 
 ---
@@ -33,11 +33,11 @@ Active development focus:
 ## 📖 About
 
 Developer tools and automation scripts for building, testing, and maintaining
-the **AxionAX Protocol** ecosystem.
+the **axionax protocol** ecosystem.
 
-### Part of AxionAX Ecosystem
+### Part of axionax Ecosystem
 
-These tools support the entire AxionAX Protocol development workflow:
+These tools support the entire axionax protocol development workflow:
 
 - **Protocol Core**: [`../axionax-core`](../axionax-core) - Main development target
 - **Web Interface**: [`../axionax-web`](../axionax-web) - Frontend development & testing
@@ -77,7 +77,7 @@ Automated installers for all major platforms:
 
 Located in `tools/`:
 
-- **`benchmark.py`** - Performance benchmarks for AxionAX Protocol
+- **`benchmark.py`** - Performance benchmarks for axionax protocol
   - VRF operations (22,817 ops/sec target)
   - Block validation (3,500 blocks/sec target)
   - Transaction verification (45,000 tx/sec target)
@@ -89,7 +89,7 @@ Located in `tools/`:
 
 ### Development Utilities
 
-- **`create_genesis.py`** - Genesis block generator for AxionAX Protocol
+- **`create_genesis.py`** - Genesis block generator for axionax protocol
 - **`migrate_go_to_rust.py`** - Migration utilities (legacy)
 - **`check-links.sh`** - Documentation link validator
 
@@ -175,7 +175,7 @@ Track progress: [`../issue-manager`](../issue-manager)
 
 ---
 
-## 🔗 AxionAX Protocol Ecosystem
+## 🔗 axionax protocol Ecosystem
 
 | Component           | Description             | Location                                         | Status     |
 | ------------------- | ----------------------- | ------------------------------------------------ | ---------- |
@@ -239,6 +239,6 @@ Run `benchmark.py` to verify your build meets these targets!
 
 ---
 
-**Part of the AxionAX Protocol Ecosystem**
+**Part of the axionax protocol Ecosystem**
 
 **Last Updated**: November 7, 2025
