@@ -4,6 +4,29 @@ Scripts and utilities for AxionAX Protocol development and testing.
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Protocol](https://img.shields.io/badge/Protocol-AxionAX-purple)](https://axionax.org)
+[![Status](https://img.shields.io/badge/Status-Pre--Testnet-orange)](https://github.com/axionaxprotocol/axionaxiues)
+
+---
+
+## 📢 Latest Update (November 2025)
+
+🎯 **Testing & Quality Assurance for Public Testnet!**
+
+Active development focus:
+
+✅ **Testing Infrastructure:**
+- Unit Tests - Target >80% coverage across all repos
+- Integration Tests - End-to-end workflow validation
+- E2E Tests - User journey testing
+- Performance Benchmarks - VRF, block validation, TX throughput
+
+🔥 **Current Phase:**
+- Running comprehensive test suites
+- Performance optimization ongoing
+- Benchmark comparisons (Rust vs Go)
+- Quality metrics tracking
+
+📦 **Tools Ready:** All testing utilities validated and production-ready
 
 ---
 
@@ -16,14 +39,18 @@ the **AxionAX Protocol** ecosystem.
 
 These tools support the entire AxionAX Protocol development workflow:
 
-- **Protocol Core**: [`../core`](../core) - Main development target
-- **Web Interface**: [`../web`](../web) - Frontend development
-- **SDK**: [`../sdk`](../sdk) - SDK testing
-- **Documentation**: [`../docs`](../docs) - Protocol documentation
-- **Deployment**: [`../deploy`](../deploy) - Infrastructure deployment
+- **Protocol Core**: [`../axionax-core`](../axionax-core) - Main development target
+- **Web Interface**: [`../axionax-web`](../axionax-web) - Frontend development & testing
+- **SDK**: [`../axionax-sdk-ts`](../axionax-sdk-ts) - SDK testing & validation
+- **Marketplace**: [`../axionax-marketplace`](../axionax-marketplace) - dApp testing
+- **Documentation**: [`../axionax-docs`](../axionax-docs) - Doc link validation
+- **Deployment**: [`../axionax-deploy`](../axionax-deploy) - Infrastructure testing
+- **Issue Manager**: [`../issue-manager`](../issue-manager) - Task automation
 
 **Main Repository**:
 [axionaxprotocol/axionaxiues](https://github.com/axionaxprotocol/axionaxiues)
+
+**Pre-Testnet Status:** All testing tools operational, active test execution phase
 
 ---
 
@@ -51,13 +78,14 @@ Automated installers for all major platforms:
 Located in `tools/`:
 
 - **`benchmark.py`** - Performance benchmarks for AxionAX Protocol
-  - VRF operations
-  - Block validation
-  - Transaction verification
-  - Memory usage analysis
-- **`run_tests.sh`** - Unified test runner
+  - VRF operations (22,817 ops/sec target)
+  - Block validation (3,500 blocks/sec target)
+  - Transaction verification (45,000 tx/sec target)
+  - Memory usage analysis (45MB idle target)
+  - **Rust vs Go comparison** (3x improvement target)
+- **`run_tests.sh`** - Unified test runner (all tests)
 - **`test-quick.ps1`** / **`quick-test.ps1`** - Quick sanity checks
-- **`test.ps1`** - Full test suite
+- **`test.ps1`** - Full test suite (unit + integration + E2E)
 
 ### Development Utilities
 
@@ -101,33 +129,64 @@ cd devtools
 python tools/benchmark.py
 ```
 
-Outputs:
+**Expected Outputs (Rust v1.6):**
 
-- VRF operations/sec
-- Block validation speed
-- Transaction throughput
-- Memory usage
-- Comparison with baseline
+- **VRF operations**: ~22,817 ops/sec (2.68x faster than Go)
+- **Block validation**: ~3,500 blocks/sec (2.92x faster)
+- **Transaction throughput**: ~45,000 tx/sec (3.0x faster)
+- **Memory usage**: ~45 MB idle (2.67x less than Go)
+- **Comparison**: Detailed Rust vs Go v1.5 metrics
+
+### Run Test Suite
+
+```bash
+# Quick sanity check (< 1 min)
+cd devtools
+./test-quick.ps1
+
+# Full test suite (unit + integration)
+./test.ps1
+
+# All tests including benchmarks
+./run_tests.sh
+```
 
 ### Generate Genesis Block
 
 ```bash
 cd devtools
-python tools/create_genesis.py --chain-id 86137 --output ../core/genesis.json
+python tools/create_genesis.py --chain-id 86137 --output ../axionax-core/genesis.json
 ```
+
+---
+
+## 🎯 Pre-Testnet Testing Checklist
+
+Use these tools to verify readiness:
+
+- [ ] ✅ **Unit Tests** - Run `test.ps1` - Target >80% coverage
+- [ ] 🔗 **Integration Tests** - Run `run_tests.sh` - All workflows pass
+- [ ] 🧪 **E2E Tests** - Validate user journeys
+- [ ] 📊 **Benchmarks** - Run `benchmark.py` - Meet performance targets
+- [ ] 🔍 **Link Validation** - Run `check-links.sh` - No broken links
+- [ ] 🏗️ **Genesis Block** - Generate with `create_genesis.py`
+
+Track progress: [`../issue-manager`](../issue-manager)
 
 ---
 
 ## 🔗 AxionAX Protocol Ecosystem
 
-| Component           | Description             | Location                 |
-| ------------------- | ----------------------- | ------------------------ |
-| **DevTools** (this) | Development utilities   | `devtools/`              |
-| **Core**            | Protocol implementation | [`../core`](../core)     |
-| **Web**             | Web interface           | [`../web`](../web)       |
-| **SDK**             | TypeScript SDK          | [`../sdk`](../sdk)       |
-| **Docs**            | Documentation           | [`../docs`](../docs)     |
-| **Deploy**          | Infrastructure          | [`../deploy`](../deploy) |
+| Component           | Description             | Location                                         | Status     |
+| ------------------- | ----------------------- | ------------------------------------------------ | ---------- |
+| **DevTools** (this) | Development utilities   | `axionax-devtools/`                              | ✅ Ready   |
+| **Core**            | Protocol implementation | [`../axionax-core`](../axionax-core)             | ✅ Ready   |
+| **Web**             | Web interface           | [`../axionax-web`](../axionax-web)               | ✅ Ready   |
+| **SDK**             | TypeScript SDK          | [`../axionax-sdk-ts`](../axionax-sdk-ts)         | ✅ Ready   |
+| **Marketplace**     | Compute marketplace     | [`../axionax-marketplace`](../axionax-marketplace) | 🚧 Beta  |
+| **Docs**            | Documentation           | [`../axionax-docs`](../axionax-docs)             | 📝 Active  |
+| **Deploy**          | Infrastructure          | [`../axionax-deploy`](../axionax-deploy)         | 🔥 Testing |
+| **Issue Manager**   | Task tracking           | [`../issue-manager`](../issue-manager)           | 🎉 New!    |
 
 ---
 
@@ -158,12 +217,28 @@ MIT License - see [LICENSE](LICENSE) file for details.
 ## 🔗 Links
 
 - **Main Repository**: https://github.com/axionaxprotocol/axionaxiues
-- **Protocol Core**: [`../core`](../core)
-- **Documentation**: [`../docs`](../docs) or https://docs.axionax.org
+- **Protocol Core**: [`../axionax-core`](../axionax-core)
+- **Documentation**: [`../axionax-docs`](../axionax-docs) or https://docs.axionax.org
 - **Issues**: https://github.com/axionaxprotocol/axionaxiues/issues
+
+---
+
+## 📊 Performance Targets
+
+### Rust v1.6 Performance Goals
+
+| Metric              | Target           | vs Go v1.5  |
+| ------------------- | ---------------- | ----------- |
+| VRF Operations      | 22,817 ops/sec   | 2.68x       |
+| Block Validation    | 3,500 blocks/sec | 2.92x       |
+| TX Verification     | 45,000 tx/sec    | 3.0x        |
+| Memory Usage (Idle) | 45 MB            | 2.67x less  |
+| Test Coverage       | >80%             | Improved    |
+
+Run `benchmark.py` to verify your build meets these targets!
 
 ---
 
 **Part of the AxionAX Protocol Ecosystem**
 
-**Last Updated**: November 6, 2025
+**Last Updated**: November 7, 2025
