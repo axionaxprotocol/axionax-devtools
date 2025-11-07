@@ -4,7 +4,7 @@ Scripts and utilities for AxionAX Protocol development and testing.
 
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Protocol](https://img.shields.io/badge/Protocol-AxionAX-purple)](https://axionax.org)
-[![Status](https://img.shields.io/badge/Status-Pre--Testnet-orange)](https://github.com/axionaxprotocol/axionaxiues)
+[![Status](https://img.shields.io/badge/Status-Pre--Testnet-orange)](https://github.com/axionaxprotocol/axionax-core)
 
 ---
 
@@ -193,7 +193,7 @@ Track progress: [`../issue-manager`](../issue-manager)
 ## 📝 Contributing
 
 1. Fork the main repository:
-   [axionaxprotocol/axionaxiues](https://github.com/axionaxprotocol/axionaxiues)
+   [axionaxprotocol/axionax-core](https://github.com/axionaxprotocol/axionax-core)
 2. Create your feature branch
 3. Add/update scripts in `devtools/` directory
 4. Document usage in script headers
@@ -216,10 +216,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🔗 Links
 
-- **Main Repository**: https://github.com/axionaxprotocol/axionaxiues
+- **Main Repository**: https://github.com/axionaxprotocol/axionax-core
 - **Protocol Core**: [`../axionax-core`](../axionax-core)
 - **Documentation**: [`../axionax-docs`](../axionax-docs) or https://docs.axionax.org
-- **Issues**: https://github.com/axionaxprotocol/axionaxiues/issues
+- **Issues**: https://github.com/axionaxprotocol/axionax-core/issues
 
 ---
 
