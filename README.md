@@ -39,16 +39,15 @@ the **axionax protocol** ecosystem.
 
 These tools support the entire axionax protocol development workflow:
 
-- **Protocol Core**: [`../axionax-core`](../axionax-core) - Main development target
-- **Web Interface**: [`../axionax-web`](../axionax-web) - Frontend development & testing
-- **SDK**: [`../axionax-sdk-ts`](../axionax-sdk-ts) - SDK testing & validation
-- **Marketplace**: [`../axionax-marketplace`](../axionax-marketplace) - dApp testing
-- **Documentation**: [`../axionax-docs`](../axionax-docs) - Doc link validation
-- **Deployment**: [`../axionax-deploy`](../axionax-deploy) - Infrastructure testing
-- **Issue Manager**: [`../issue-manager`](../issue-manager) - Task automation
+- **Protocol Core**: [`axionax-core`](https://github.com/axionaxprotocol/axionax-core) - Main development target
+- **Web Interface**: [`axionax-web`](https://github.com/axionaxprotocol/axionax-web) - Frontend development & testing
+- **SDK**: [`axionax-sdk-ts`](https://github.com/axionaxprotocol/axionax-sdk-ts) - SDK testing & validation
+- **Marketplace**: [`axionax-marketplace`](https://github.com/axionaxprotocol/axionax-marketplace) - dApp testing
+- **Documentation**: [`axionax-docs`](https://github.com/axionaxprotocol/axionax-docs) - Doc link validation
+- **Deployment**: [`axionax-deploy`](https://github.com/axionaxprotocol/axionax-deploy) - Infrastructure testing
+- **Issue Manager**: [`issue-manager`](https://github.com/axionaxprotocol/issue-manager) - Task automation
 
-**Main Repository**:
-[axionaxprotocol/axionaxiues](https://github.com/axionaxprotocol/axionaxiues)
+**GitHub Organization**: https://github.com/axionaxprotocol
 
 **Pre-Testnet Status:** All testing tools operational, active test execution phase
 
