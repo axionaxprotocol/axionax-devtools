@@ -1,6 +1,6 @@
-# Axionax DevTools
+# axionax DevTools
 
-Development tools and scripts for Axionax Protocol.
+Development tools and scripts for axionax Protocol.
 
 ## 📁 Directory Structure
 
