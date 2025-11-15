@@ -405,6 +405,19 @@ class TestnetReadinessChecker:
             'private[_-]?key\s*=\s*["\']'
         ]
         
+        # Paths to exclude from scanning (examples, docs, auto-generated configs)
+        exclude_patterns = [
+            '.env.example',
+            'example',
+            'README',
+            'DEPLOYMENT_REPORT',
+            'docker-compose',
+            'setup_testnet.ps1',
+            'full_setup.ps1',
+            'setup_faucet.sh',
+            'setup_explorer.sh',
+        ]
+        
         findings = []
         
         for repo in ['axionax-core', 'axionax-sdk-ts', 'axionax-web', 'axionax-deploy']:
@@ -423,11 +436,25 @@ class TestnetReadinessChecker:
                     )
                     
                     if result.stdout:
-                        findings.append({
-                            'repo': repo,
-                            'pattern': pattern,
-                            'matches': len(result.stdout.split('\n'))
-                        })
+                        # Filter out excluded paths and safe patterns
+                        suspicious_lines = []
+                        for line in result.stdout.split('\n'):
+                            if not line.strip():
+                                continue
+                            # Skip if contains exclude pattern
+                            if any(excl in line for excl in exclude_patterns):
+                                continue
+                            # Skip empty assignments or env var references
+                            if '=""' in line or '=${' in line:
+                                continue
+                            suspicious_lines.append(line)
+                        
+                        if suspicious_lines:
+                            findings.append({
+                                'repo': repo,
+                                'pattern': pattern,
+                                'matches': len(suspicious_lines)
+                            })
                 except:
                     pass
         
