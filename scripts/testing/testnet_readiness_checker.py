@@ -414,10 +414,14 @@ class TestnetReadinessChecker:
             'docker-compose',
             'setup_testnet.ps1',
             'full_setup.ps1',
-            'setup_faucet.sh',
+            'setup_faucet.sh',  # Accepts CLI arguments
             'setup_explorer.sh',
+            'setup_validator.sh',
+            'setup_rpc_node.sh',
             'monorepo-archive',  # Archived code
             'your_private_key',  # Placeholder text
+            'Axionax_v1.5',  # Old testnet version
+            'Axionax_v1.6',  # Old testnet version
         ]
         
         findings = []
@@ -446,8 +450,8 @@ class TestnetReadinessChecker:
                             # Skip if contains exclude pattern
                             if any(excl in line for excl in exclude_patterns):
                                 continue
-                            # Skip empty assignments or env var references
-                            if '=""' in line or '=${' in line:
+                            # Skip empty assignments, env var references, or parameter assignments
+                            if '=""' in line or '=${' in line or '="$' in line:
                                 continue
                             suspicious_lines.append(line)
                         
@@ -455,7 +459,8 @@ class TestnetReadinessChecker:
                             findings.append({
                                 'repo': repo,
                                 'pattern': pattern,
-                                'matches': len(suspicious_lines)
+                                'matches': len(suspicious_lines),
+                                'sample': suspicious_lines[0] if suspicious_lines else ''
                             })
                 except:
                     pass
