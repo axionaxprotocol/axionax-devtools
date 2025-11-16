@@ -416,11 +416,13 @@ class TestnetReadinessChecker:
             'full_setup.ps1',
             'setup_faucet.sh',
             'setup_explorer.sh',
+            'monorepo-archive',  # Archived code
+            'your_private_key',  # Placeholder text
         ]
         
         findings = []
         
-        for repo in ['axionax-core', 'axionax-sdk-ts', 'axionax-web', 'axionax-deploy']:
+        for repo in ['axionax-core', 'axionax-sdk-ts', 'axionax-web', 'axionax-deploy', 'axionax-devtools']:
             repo_path = self.workspace_root / repo
             if not repo_path.exists():
                 continue
