@@ -67,7 +67,7 @@ try {
 }
 
 # Locate checker script
-$checkerScript = Join-Path $PSScriptRoot "axionax-devtools\scripts\testing\testnet_readiness_checker.py"
+$checkerScript = Join-Path $PSScriptRoot "scripts/testing/testnet_readiness_checker.py"
 
 if (-not (Test-Path $checkerScript)) {
     Write-ColorOutput "  ❌ Readiness checker script not found at: $checkerScript" "Red"
