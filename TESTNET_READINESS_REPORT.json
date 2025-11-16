@@ -1,0 +1,406 @@
+{
+  "timestamp": "2025-11-15T23:49:57.920021",
+  "overall_passed": true,
+  "overall_score": 73.5,
+  "results": [
+    {
+      "name": "Repository Structure",
+      "category": "infrastructure",
+      "passed": true,
+      "score": 100,
+      "message": "All 6 repos present",
+      "details": {
+        "repos": [
+          "axionax-core",
+          "axionax-sdk-ts",
+          "axionax-web",
+          "axionax-docs",
+          "axionax-deploy",
+          "axionax-devtools"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Git Configuration",
+      "category": "infrastructure",
+      "passed": false,
+      "score": 50,
+      "message": "30 uncommitted changes",
+      "details": {
+        "uncommitted": 30
+      },
+      "critical": false
+    },
+    {
+      "name": "Dependencies",
+      "category": "infrastructure",
+      "passed": false,
+      "score": 33.33333333333333,
+      "message": "2/6 dependencies",
+      "details": {
+        "missing": [
+          "rust",
+          "cargo",
+          "npm",
+          "docker"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Build Tools",
+      "category": "infrastructure",
+      "passed": false,
+      "score": 50.0,
+      "message": "1/2 builds OK",
+      "details": {
+        "rust_build": false,
+        "node_build": true
+      },
+      "critical": false
+    },
+    {
+      "name": "Code Quality",
+      "category": "codebase",
+      "passed": false,
+      "score": 0,
+      "message": "Quality score: 0.0/100 (Below threshold)",
+      "details": {
+        "axionax-core": {
+          "ease_of_use": 71.0,
+          "performance": 67.0,
+          "organization": 69.0,
+          "compatibility": 49.0,
+          "total": 64.0,
+          "grade": "D"
+        },
+        "axionax-sdk-ts": {
+          "ease_of_use": 48.0,
+          "performance": 35.0,
+          "organization": 61.0,
+          "compatibility": 38.0,
+          "total": 45.5,
+          "grade": "F"
+        },
+        "axionax-web": {
+          "ease_of_use": 50.0,
+          "performance": 47.0,
+          "organization": 73.0,
+          "compatibility": 43.0,
+          "total": 53.25,
+          "grade": "F"
+        },
+        "axionax-marketplace": {
+          "ease_of_use": 38.0,
+          "performance": 20.0,
+          "organization": 53.0,
+          "compatibility": 38.0,
+          "total": 37.25,
+          "grade": "F"
+        },
+        "axionax-docs": {
+          "ease_of_use": 44.0,
+          "performance": 0.0,
+          "organization": 34.0,
+          "compatibility": 0.0,
+          "total": 19.5,
+          "grade": "F"
+        },
+        "axionax-deploy": {
+          "ease_of_use": 55.0,
+          "performance": 38.0,
+          "organization": 37.0,
+          "compatibility": 33.0,
+          "total": 40.75,
+          "grade": "F"
+        },
+        "axionax-devtools": {
+          "ease_of_use": 44.0,
+          "performance": 15.0,
+          "organization": 39.0,
+          "compatibility": 15.0,
+          "total": 28.25,
+          "grade": "F"
+        }
+      },
+      "critical": false
+    },
+    {
+      "name": "Test Coverage",
+      "category": "codebase",
+      "passed": true,
+      "score": 80,
+      "message": "Tests executed",
+      "details": null,
+      "critical": false
+    },
+    {
+      "name": "Build Success",
+      "category": "codebase",
+      "passed": false,
+      "score": 0.0,
+      "message": "0/3 builds successful",
+      "details": {
+        "rust": false,
+        "axionax-sdk-ts": false,
+        "axionax-web": false
+      },
+      "critical": false
+    },
+    {
+      "name": "Linting",
+      "category": "codebase",
+      "passed": true,
+      "score": 100,
+      "message": "5 lint configs found",
+      "details": {
+        "configs": [
+          "axionax-core/clippy.toml",
+          "axionax-sdk-ts/.eslintrc.json",
+          "axionax-sdk-ts/.prettierrc",
+          "axionax-web/.eslintrc.json",
+          "axionax-web/.prettierrc"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "No Hardcoded Secrets",
+      "category": "security",
+      "passed": true,
+      "score": 100,
+      "message": "No hardcoded secrets detected",
+      "details": null,
+      "critical": true
+    },
+    {
+      "name": "Dependency Vulnerabilities",
+      "category": "security",
+      "passed": true,
+      "score": 100,
+      "message": "No critical vulnerabilities found",
+      "details": null,
+      "critical": true
+    },
+    {
+      "name": "Security Audit Status",
+      "category": "security",
+      "passed": true,
+      "score": 100,
+      "message": "Found 1 audit report(s)",
+      "details": {
+        "audits": [
+          "axionax-core\\SECURITY_AUDIT.md"
+        ]
+      },
+      "critical": true
+    },
+    {
+      "name": "Access Controls",
+      "category": "security",
+      "passed": true,
+      "score": 100,
+      "message": "4 access configs",
+      "details": {
+        "configs": [
+          "axionax-core/.gitignore",
+          "axionax-sdk-ts/.gitignore",
+          "axionax-web/.gitignore",
+          "axionax-deploy/.gitignore"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Benchmark Suite",
+      "category": "performance",
+      "passed": true,
+      "score": 50,
+      "message": "2 benchmark files found",
+      "details": {
+        "bench_files": [
+          "axionax-core\\benches\\blockchain_bench.rs",
+          "axionax-core\\benches\\crypto_bench.rs"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Build Optimization",
+      "category": "performance",
+      "passed": false,
+      "score": 60,
+      "message": "2 optimizations",
+      "details": {
+        "optimizations": [
+          "rust_release_profile",
+          "axionax-sdk-ts_tsconfig"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Load Testing",
+      "category": "performance",
+      "passed": true,
+      "score": 100,
+      "message": "1 load test files",
+      "details": {
+        "files": [
+          "axionax-core\\tests\\load_test.py"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Core Documentation",
+      "category": "documentation",
+      "passed": true,
+      "score": 100,
+      "message": "All 4 core docs present",
+      "details": {
+        "docs": [
+          "README.md",
+          "ARCHITECTURE.md",
+          "DEVELOPER_GUIDE.md",
+          "CONTRIBUTING.md"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "API Documentation",
+      "category": "documentation",
+      "passed": true,
+      "score": 100,
+      "message": "2 API docs found",
+      "details": {
+        "docs": [
+          "axionax-core\\docs\\API_REFERENCE.md",
+          "axionax-docs\\API_REFERENCE.md"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Deployment Guides",
+      "category": "documentation",
+      "passed": false,
+      "score": 40,
+      "message": "1 deployment docs",
+      "details": {
+        "docs": [
+          "axionax-docs\\VPS_VALIDATOR_SETUP.md"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Examples",
+      "category": "documentation",
+      "passed": true,
+      "score": 90,
+      "message": "6 examples",
+      "details": {
+        "examples": [
+          {
+            "repo": "axionax-core",
+            "count": 3
+          },
+          {
+            "repo": "axionax-sdk-ts",
+            "count": 3
+          }
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Docker Configuration",
+      "category": "deployment",
+      "passed": true,
+      "score": 60,
+      "message": "3 Docker files",
+      "details": {
+        "files": [
+          "axionax-web/Dockerfile",
+          "axionax-web/docker-compose.yml",
+          "axionax-deploy/Dockerfile"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Environment Configs",
+      "category": "deployment",
+      "passed": true,
+      "score": 75,
+      "message": "3 env configs",
+      "details": {
+        "configs": [
+          "axionax-core/.env.example",
+          "axionax-web/.env.example",
+          "axionax-deploy/.env.example"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Deployment Scripts",
+      "category": "deployment",
+      "passed": true,
+      "score": 100,
+      "message": "4 deployment scripts",
+      "details": {
+        "scripts": [
+          "setup_rpc_node.sh",
+          "setup_validator.sh",
+          "setup_faucet.sh",
+          "setup_explorer.sh"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Logging Configuration",
+      "category": "monitoring",
+      "passed": true,
+      "score": 50,
+      "message": "1 logging configs",
+      "details": {
+        "configs": [
+          "axionax-core/Cargo.toml (logging)"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Metrics Collection",
+      "category": "monitoring",
+      "passed": true,
+      "score": 100,
+      "message": "2 metrics configs",
+      "details": {
+        "files": [
+          "axionax-core/prometheus.yml",
+          "axionax-core/metrics.toml"
+        ]
+      },
+      "critical": false
+    },
+    {
+      "name": "Health Checks",
+      "category": "monitoring",
+      "passed": true,
+      "score": 100,
+      "message": "1 health endpoints",
+      "details": {
+        "endpoints": [
+          "axionax-core\\src\\health.rs"
+        ]
+      },
+      "critical": false
+    }
+  ]
+}

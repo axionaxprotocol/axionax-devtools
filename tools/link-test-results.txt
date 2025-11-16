@@ -1,0 +1,10 @@
+﻿Axionax Link Validation Results
+Generated: 2025-11-11 17:20:28
+Duration: 25.12 seconds
+
+Summary:
+- Total Links Tested: 16667
+- Broken Links: 608
+- Warnings: 3
+
+Status: FAILED

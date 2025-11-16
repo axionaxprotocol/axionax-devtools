@@ -1,0 +1,58 @@
+{
+  "axionax-core": {
+    "ease_of_use": 71.0,
+    "performance": 67.0,
+    "organization": 69.0,
+    "compatibility": 49.0,
+    "total": 64.0,
+    "grade": "D"
+  },
+  "axionax-sdk-ts": {
+    "ease_of_use": 48.0,
+    "performance": 35.0,
+    "organization": 61.0,
+    "compatibility": 38.0,
+    "total": 45.5,
+    "grade": "F"
+  },
+  "axionax-web": {
+    "ease_of_use": 50.0,
+    "performance": 47.0,
+    "organization": 73.0,
+    "compatibility": 43.0,
+    "total": 53.25,
+    "grade": "F"
+  },
+  "axionax-marketplace": {
+    "ease_of_use": 38.0,
+    "performance": 20.0,
+    "organization": 53.0,
+    "compatibility": 38.0,
+    "total": 37.25,
+    "grade": "F"
+  },
+  "axionax-docs": {
+    "ease_of_use": 44.0,
+    "performance": 0.0,
+    "organization": 34.0,
+    "compatibility": 0.0,
+    "total": 19.5,
+    "grade": "F"
+  },
+  "axionax-deploy": {
+    "ease_of_use": 55.0,
+    "performance": 38.0,
+    "organization": 37.0,
+    "compatibility": 33.0,
+    "total": 40.75,
+    "grade": "F"
+  },
+  "axionax-devtools": {
+    "ease_of_use": 44.0,
+    "performance": 15.0,
+    "organization": 39.0,
+    "compatibility": 15.0,
+    "total": 28.25,
+    "grade": "F"
+  }
+}

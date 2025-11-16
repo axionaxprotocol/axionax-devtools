@@ -1,0 +1,232 @@
+================================================================================
+AXIONAX REPOSITORY CONNECTION ANALYSIS REPORT
+================================================================================
+
+📊 REPOSITORY SUMMARY
+--------------------------------------------------------------------------------
+Total Repositories: 7
+Existing Repositories: 7
+Total Connections Found: 35
+
+📦 DETAILED REPOSITORY ANALYSIS
+--------------------------------------------------------------------------------
+
+### AXIONAX-CORE
+----------------------------------------
+✅ Status: EXISTS
+   Branch: main
+   Remote: https://github.com/axionaxprotocol/axionax-core.git
+   Last Commit: a6c4d4ed - Upgrade to v1.8.0: ARCHITECTURE v1.5 compliance
+
+📄 Package.json:
+   Dependencies: 2
+   Dev Dependencies: 5
+
+📦 Cargo.toml:
+
+📖 README.md:
+   Size: 24284 bytes
+   References to other repos:
+     - axionax-web: 4 mention(s)
+     - axionax-sdk-ts: 9 mention(s)
+     - axionax-marketplace: 4 mention(s)
+     - axionax-docs: 6 mention(s)
+     - axionax-deploy: 4 mention(s)
+     - axionax-devtools: 4 mention(s)
+
+🔗 Import Statements (7 found):
+     Implements the ASR algorithm from axionax whitepaper:
+     print("Successfully imported 'axionax_bridge' module.")
+     import axionax_bridge
+     print(f"⚠️  Warning: Could not import axionax_python: {e}")
+     print("\n!!! FAILED to import 'axionax_bridge'.")
+     ... and 2 more
+
+
+### AXIONAX-WEB
+----------------------------------------
+✅ Status: EXISTS
+   Branch: main
+   Remote: https://github.com/axionaxprotocol/axionax-web.git
+   Last Commit: 1eee1ff - Add real-time stats from Explorer API - Update Statistics component to fetch live data every 5s - Add /api/stats endpoint to Explorer API - Display real block height, service count, and uptime
+
+📄 Package.json:
+   Dependencies: 4
+   Dev Dependencies: 10
+
+📖 README.md:
+   Size: 15886 bytes
+   References to other repos:
+     - axionax-core: 7 mention(s)
+     - axionax-sdk-ts: 7 mention(s)
+     - axionax-marketplace: 4 mention(s)
+     - axionax-docs: 7 mention(s)
+     - axionax-deploy: 8 mention(s)
+     - axionax-devtools: 4 mention(s)
+
+🔗 Import Statements (24 found):
+     (self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[120],{2233:function(e,s,t){Promise.resolve(
+     import { connectWallet, getCurrentAccount, getBalance, getCurrentChainId, AXIONAX_TESTNET } from '@/
+     <pre>{`import { axionaxClient } from '@axionax/sdk';
+     globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/faucet/page"]=
+     globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/docs/page"]={"
+     ... and 19 more
+
+
+### AXIONAX-SDK-TS
+----------------------------------------
+✅ Status: EXISTS
+   Branch: main
+   Remote: https://github.com/axionaxprotocol/axionax-sdk-ts.git
+   Last Commit: 13b0512 - docs: add QUICK_START guide for developers [Local dev]
+
+📄 Package.json:
+   Dependencies: 2
+   Dev Dependencies: 5
+
+📖 README.md:
+   Size: 9750 bytes
+   References to other repos:
+     - axionax-core: 4 mention(s)
+     - axionax-web: 1 mention(s)
+     - axionax-marketplace: 1 mention(s)
+
+🔗 Import Statements (4 found):
+     import { axionaxClient } from '../src';
+     import { axionaxClient } from '../../src/client';
+     from: 'axionax1test...',
+     import { axionaxClient, Wallet, Contract } from '../../src';
+
+
+### AXIONAX-MARKETPLACE
+----------------------------------------
+✅ Status: EXISTS
+   Branch: main
+   Remote: https://github.com/axionaxprotocol/axionax-marketplace.git
+   Last Commit: 8d2acf4 - docs: add QUICK_START guide for developers [Local dev]
+
+📄 Package.json:
+   Dependencies: 5
+   Dev Dependencies: 13
+   Axionax Dependencies:
+     - @axionax/sdk (file:../axionax-sdk-ts) [dependencies]
+
+📖 README.md:
+   Size: 9271 bytes
+   References to other repos:
+     - axionax-core: 4 mention(s)
+     - axionax-docs: 2 mention(s)
+
+
+### AXIONAX-DOCS
+----------------------------------------
+✅ Status: EXISTS
+   Branch: main
+   Remote: https://github.com/axionaxprotocol/axionax-docs.git
+   Last Commit: 1613248 - Update documentation to v1.8.0
+
+📖 README.md:
+   Size: 9635 bytes
+   References to other repos:
+     - axionax-core: 11 mention(s)
+     - axionax-web: 5 mention(s)
+     - axionax-sdk-ts: 4 mention(s)
+     - axionax-marketplace: 4 mention(s)
+     - axionax-deploy: 5 mention(s)
+     - axionax-devtools: 4 mention(s)
+
+
+### AXIONAX-DEPLOY
+----------------------------------------
+✅ Status: EXISTS
+   Branch: main
+   Remote: https://github.com/axionaxprotocol/axionax-deploy.git
+   Last Commit: feca95a - Deploy working Mock RPC and Grafana - Add complete Node.js Mock RPC with 15+ Ethereum methods - Deploy Grafana v12.2.1 on port 3030 - Create axionax-overview dashboard - Chain ID 86137, block auto-increment, WebSocket support
+
+📄 Package.json:
+   Dependencies: 5
+   Dev Dependencies: 9
+   Axionax Dependencies:
+     - @axionax/sdk (file:../axionax-sdk-ts) [dependencies]
+
+📖 README.md:
+   Size: 12199 bytes
+   References to other repos:
+     - axionax-core: 8 mention(s)
+     - axionax-web: 5 mention(s)
+     - axionax-sdk-ts: 3 mention(s)
+     - axionax-marketplace: 2 mention(s)
+     - axionax-docs: 5 mention(s)
+     - axionax-devtools: 2 mention(s)
+
+🔗 Import Statements (1 found):
+     wget https://raw.githubusercontent.com/axionaxprotocol/axionax-deploy/main/genesis.json
+
+
+### AXIONAX-DEVTOOLS
+----------------------------------------
+✅ Status: EXISTS
+   Branch: main
+   Remote: https://github.com/axionaxprotocol/axionax-devtools.git
+   Last Commit: 514dc1d - docs: add QUICK_START guide for developers [Local dev]
+
+📖 README.md:
+   Size: 4306 bytes
+   References to other repos:
+     - axionax-core: 4 mention(s)
+     - axionax-web: 4 mention(s)
+     - axionax-sdk-ts: 4 mention(s)
+     - axionax-marketplace: 2 mention(s)
+     - axionax-docs: 2 mention(s)
+     - axionax-deploy: 2 mention(s)
+
+🔗 Import Statements (11 found):
+     if 'axionax' in line.lower() and any(keyword in line for keyword in ['import', 'require', 'from', 'u
+     # Should use lowercase 'axionax', not 'AxionAX' or 'Axionax'
+     # Look for axionax imports that might be broken
+     axionax_imports = set()
+     return axionax_imports
+     ... and 6 more
+
+
+🔗 CONNECTION GRAPH
+--------------------------------------------------------------------------------
+axionax-core --> axionax-web (docs:reference(4))
+axionax-core --> axionax-sdk-ts (docs:reference(9))
+axionax-core --> axionax-marketplace (docs:reference(4))
+axionax-core --> axionax-docs (docs:reference(6))
+axionax-core --> axionax-deploy (docs:reference(4))
+axionax-core --> axionax-devtools (docs:reference(4))
+axionax-web --> axionax-core (docs:reference(7))
+axionax-web --> axionax-sdk-ts (docs:reference(7))
+axionax-web --> axionax-marketplace (docs:reference(4))
+axionax-web --> axionax-docs (docs:reference(7))
+axionax-web --> axionax-deploy (docs:reference(8))
+axionax-web --> axionax-devtools (docs:reference(4))
+axionax-sdk-ts --> axionax-core (docs:reference(4))
+axionax-sdk-ts --> axionax-web (docs:reference(1))
+axionax-sdk-ts --> axionax-marketplace (docs:reference(1))
+axionax-marketplace --> axionax-core (docs:reference(4))
+axionax-marketplace --> axionax-docs (docs:reference(2))
+axionax-docs --> axionax-core (docs:reference(11))
+axionax-docs --> axionax-web (docs:reference(5))
+axionax-docs --> axionax-sdk-ts (docs:reference(4))
+axionax-docs --> axionax-marketplace (docs:reference(4))
+axionax-docs --> axionax-deploy (docs:reference(5))
+axionax-docs --> axionax-devtools (docs:reference(4))
+axionax-deploy --> axionax-core (docs:reference(8))
+axionax-deploy --> axionax-web (docs:reference(5))
+axionax-deploy --> axionax-sdk-ts (docs:reference(3))
+axionax-deploy --> axionax-marketplace (docs:reference(2))
+axionax-deploy --> axionax-docs (docs:reference(5))
+axionax-deploy --> axionax-devtools (docs:reference(2))
+axionax-devtools --> axionax-core (docs:reference(4))
+axionax-devtools --> axionax-web (docs:reference(4))
+axionax-devtools --> axionax-sdk-ts (docs:reference(4))
+axionax-devtools --> axionax-marketplace (docs:reference(2))
+axionax-devtools --> axionax-docs (docs:reference(2))
+axionax-devtools --> axionax-deploy (docs:reference(2))
+
+================================================================================
+END OF REPORT
+================================================================================
