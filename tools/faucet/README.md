@@ -63,7 +63,8 @@ cargo build --release
 #### 2. Configure Environment
 
 ```bash
-export FAUCET_PRIVATE_KEY="your_private_key_here"
+# EXAMPLE - Replace with your actual values (NEVER commit real keys)
+export FAUCET_PRIVATE_KEY="0x0000000000000000000000000000000000000000000000000000000000000000"
 export RPC_URL="https://testnet-rpc.axionax.org"
 export CHAIN_ID="86137"
 ```
